@@ -195,7 +195,7 @@ const Home: NextPage = () => {
           ):(
             <div className="bg-red-800/0 w-full overflow-y-auto md:h-full grid grid-rows-4 lg:grid-cols-4 lg:px-8 lg:py-4">
               <ChainCard chain='uni' chainStatus={`${uniStatus}_${uniFetchStatus}`} refetch={uniRefetch} client={uniClient} checkResponse={uniData} walletLoading={walletLoading}/>
-              {/* <ChainCard chain='juno' chainStatus={`${junoStatus}_${junoFetchStatus}`} refetch={junoRefetch} client={junoClient} checkResponse={junoData} walletLoading={walletLoading}/> */}
+              <ChainCard chain='juno' chainStatus={`${junoStatus}_${junoFetchStatus}`} refetch={junoRefetch} client={junoClient} checkResponse={junoData} walletLoading={walletLoading}/>
               <ChainCard chain='injective' chainStatus={`${injectiveStatus}_${injectiveFetchStatus}`} refetch={injectiveRefetch} client={injectiveClient} checkResponse={injectiveData} walletLoading={walletLoading}/>
               <ChainCard chain='aura' chainStatus={`${auraStatus}_${auraFetchStatus}`} refetch={auraRefetch} client={auraClient} checkResponse={auraData} walletLoading={walletLoading}/>
               <ChainCard chain='stargaze' chainStatus={`${stargazeStatus}_${stargazeFetchStatus}`} refetch={stargazeRefetch} client={stargazeClient} checkResponse={stargazeData} walletLoading={walletLoading}/>
